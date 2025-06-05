@@ -1,0 +1,112 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Container with glass effect */
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* Title */
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Quote text */
+#quote-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+#quote-author {
+  font-size: 1rem;
+  color: #d1d5db;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: #fff;
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+  background: #f3f4f6;
+  transform: scale(1.05);
+}
+
+/* Dark Mode Toggle */
+.toggle-dark {
+  margin-top: 25px;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+}
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+  accent-color: #fff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #f3f4f6;
+}
+
+body.dark-mode .container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode button {
+  background: #1f2937;
+  color: #f3f4f6;
+}
+
+body.dark-mode button:hover {
+  background: #374151;
+}
